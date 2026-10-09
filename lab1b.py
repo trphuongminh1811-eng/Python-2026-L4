@@ -8,7 +8,6 @@ def add_student():
         id = input("id: ")
         name = input("name: ")
         dob = input("dob: ")
-        # make dictionary
         st = {"id": id, "name": name, "dob": dob}
         list_students.append(st)
 
@@ -21,9 +20,7 @@ def add_course():
         list_courses.append(crs)
 
 def add_mark():
-    c_id = input("enter course id to add mark: ")
-    
-    # check if course exists
+    c_id = input("enter course id to add mark: ")    
     found = False
     for i in range(len(list_courses)):
         if list_courses[i]["id"] == c_id:
